@@ -24,17 +24,18 @@
 | ==Highlight==                | `== ==`                | `==highlight text==`                     |
 | **Bold and _nested_ italic** | `** ** and _ _`        | `**Bold text and _nested italic_ text**` |
 | ***Bold and italic***        | `*** ***` or `___ ___` | `***bold and italic text***`             |
+
 Formatting can be forced to display in plain text by adding a backslash `\` in front of it.
 
-\*\*This line will not be bold\*\*
 ```md
 \*\*This line will not be bold\*\*
 ```
+\*\*This line will not be bold\*\*
 
-\**This line will be italic and show the asterisks*\*
 ```md
 \**This line will be italic and show the asterisks*\*
 ```
+\**This line will be italic and show the asterisks*\*
 
 # Lists 
 ```md
@@ -123,7 +124,7 @@ You can also inline footnotes in a sentence. Note that the caret goes outside th
 ```md
 You can also use inline footnotes. ^[This is an inline footnote.]
 ```
-
+You can also use inline footnotes. ^[This is an inline footnote.]
 # Tables
 ```
 | Header 1 | Header 2 | Header 3 |
