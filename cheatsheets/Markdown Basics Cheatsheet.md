@@ -1,4 +1,5 @@
 # Headings 
+
 ```md
 # H1
 ## H2
@@ -14,66 +15,76 @@
 ##### H5
 ###### H6
 
-# Bold, italics, highlights 
+# Text Formatting
 
-| Style                        | Syntax                 | Example                                  |
-| ---------------------------- | ---------------------- | ---------------------------------------- |
-| **Bold**                     | `** **` or `__ __`     | `**bold text**`                          |
-| *Italic*                     | `* *` or `_ _`         | `*italic text*`                          |
-| ~~Strikethrough~~            | `~~ ~~`                | `~~strikethrough text~~`                 |
-| ==Highlight==                | `== ==`                | `==highlight text==`                     |
-| **Bold and _nested_ italic** | `** ** and _ _`        | `**Bold text and _nested italic_ text**` |
-| ***Bold and italic***        | `*** ***` or `___ ___` | `***bold and italic text***`             |
-
+| Example                        | Output                            |
+| ------------------------------ | --------------------------------- |
+| `**bold**`                     | **bold**                          |
+| `*italic*`                     | _italic_                          |
+| `~~strike~~`                   | ~~strike~~                        |
+| `==highlight==`                | ==highlight==                     |
+| `x^2^`                         | x²                                |
+| `H~2~O`                        | H₂O                               |
+| `**bold and _nested italic_**` | **bold text and _nested italic_** |
+| `***bold and italic***`        | ***bold and italic***             |
 Formatting can be forced to display in plain text by adding a backslash `\` in front of it.
 
+\*\*This line will not be bold\*\*
 ```md
 \*\*This line will not be bold\*\*
 ```
-\*\*This line will not be bold\*\*
 
+\**This line will be italic and show the asterisks*\*
 ```md
 \**This line will be italic and show the asterisks*\*
 ```
-\**This line will be italic and show the asterisks*\*
 
 # Lists 
+
 ```md
 - First list item
 - Second list item
 - Third list item
 ```
+
 - First list item
 - Second list item
 - Third list item
+
 ```md
 1. First list item
 2. Second list item
 3. Third list item
 ```
+
 1. First list item
 2. Second list item
 3. Third list item
 
 # Blockquotes
+
 ```md
 > This is a blockquote.
 ```
+
 > This is a blockquote.
 
 # Horizontal Rule / Separator
 ```md
 ---
 ```
+
 ---
 
-# Links
-```md
-[link text](https://example.com/)
-```
-[link text](https://example.com/)
+# Links & Images
 
+| Syntax                    | Description         | Example                        |
+| ------------------------- | ------------------- | ------------------------------ |
+| `[Link Text](URL)`        | Hyperlink           | `[Google](https://google.com)` |
+| `![Alt Text](Image URL)`  | Image               | `![Obsidian Logo](image.png)`  |
+| `![[Internal Note Name]]` | Embed internal note | `![[MyNote]]`                  |
 # Code 
+
 ### Inline code 
 You can format code within a sentence using single backticks.
 
@@ -84,7 +95,6 @@ Text inside `backticks` on a line will be formatted like code.
 Text inside `backticks` on a line will be formatted like code.
 
 ### Code blocks 
-
 To format a block of code, surround the code with triple backticks.
 
 ````md
@@ -99,14 +109,16 @@ cd ~/Desktop
 
 # Task lists 
 To create a task list, start each list item with a hyphen and space followed by `[ ]`.
-````
+```md
 - [x] This is a completed task.
 - [ ] This is an incomplete task.
-````
+```
+
 - [x] This is a completed task.
 - [ ] This is an incomplete task.
 
 # Footnotes 
+
 You can add footnotes[^1] to your notes using the following syntax:
 [^1]: This is the referenced text.
 
@@ -124,9 +136,10 @@ You can also inline footnotes in a sentence. Note that the caret goes outside th
 ```md
 You can also use inline footnotes. ^[This is an inline footnote.]
 ```
-You can also use inline footnotes. ^[This is an inline footnote.]
+
 # Tables
-```
+
+```md
 | Header 1 | Header 2 | Header 3 |
 | -------- | -------- | -------- |
 | Cell 1   | Cell 2   | Cell 3   |
@@ -149,3 +162,28 @@ Common characters to escape
 - Backtick: `` \` ``
 - Pipe (used in tables): `\|`
 - Tilde: `\~`
+
+# Obsidian-Specific Features
+
+- **Internal Links**: `[[Note Name]]`
+    - Links to another note in your vault.
+- **Backlinks**: Use the `[[ ]]` syntax in any note to automatically create backlinks.
+- **Embeds**: Use `![[Note Name]]` to embed another note.
+- **Tags**: Use `#` to create tags, e.g., `#task` or `#project`.
+- **Callouts**:
+```md
+> [!NOTE]
+> This is a callout box.
+```
+
+> [!NOTE]  
+> This is a callout box.
+
+- **Frontmatter** (YAML Metadata):
+```yaml
+---
+title: My Note
+tags: [example, obsidian]
+created: 2024-12-01
+---
+```    
