@@ -1,23 +1,26 @@
 ---
-name: {{name}}
-role: {{role}}
-team: {{team}}
-location: {{location}}
-tags: [person, team]
-last_updated: {{date:YYYY-MM-DD}}
+name: <% tp.file.title %>
+role: 
+team: 
+location: 
+tags: [person]
 meetings: []
+created: <% tp.file.creation_date() %>
+modified: <% tp.file.last_modified_date() %>
 ---
+# <% tp.file.title %>
 ## Details
-- **Role:** {{role}}
-- **Team:** {{team}}
-- **Location:** {{location}}
-- **Interests:** {{interests}}
-- **Pets:** {{pets}}
-- **Preferred Pronouns:** {{pronouns}}
+- **Preferred Pronouns:** 
+- **Interests:** 
+- **Pets:** 
 
-## Recent Meetings
+---
+## Meetings
 ```dataview
-table date, type, notes
+list
 from "Meetings"
-where contains(participants, "{{name}}")
-sort date desc
+where contains(participants, "<% tp.file.title %>")
+sort file.cdate desc, file.ctime desc
+```
+
+ 

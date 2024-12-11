@@ -18,13 +18,16 @@ Cheatsheets and personal templates for Obsidian
 		4. Toggle off the Daily Notes core plugin
 			1. Go to Obsidian Settings -> Core Plugins
 			2. Toggle Daily Notes to Off
-		3.
 	3. Templater
 		1. Set Template folder location to `Templates` or other desired location
 		2. Toggle on `Automatic jump to cursor`
 		3. Toggle on `Trigger Templater on new file creation`
 			1. This will allow Templater to convert template tags when a new note is created, e.g., when a new Daily Note is created
-		4. Turn off the Templates core plugin
+		4. Update Templater Folder Templates
+			1. In the plugin settings, find Folder Templates
+			2. Add the People Directory to trigger the People Template
+			3. This allows you to use Ctrl+O (Cmd+O), type in `People/Chandler` to create a new note in the People directory, and automatically trigger the People template
+		5. Turn off the Templates core plugin
 			1. Go to Obsidian Settings -> Core Plugins
 			2. Toggle Templates to Off
 #### Using Templater for File Titles
@@ -32,3 +35,6 @@ Cheatsheets and personal templates for Obsidian
 	- Go to Obsidian Settings -> Appearance
 	- Scroll down to Interface
 	- Toggle to Off
+
+#### Optional
+- Remove `Templates` from Graph View and Search by adding the directory to Excluded Files in Obsidian Settings -> Files and Links -> Excluded Files
