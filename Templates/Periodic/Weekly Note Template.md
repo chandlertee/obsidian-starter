@@ -46,7 +46,7 @@ ___
 - 
 
 ___
-#### Daily Notes
+## Daily Notes
 - [[<% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-[W]ww") %>]]
 - [[<% tp.date.now("YYYY-MM-DD", 1, tp.file.title, "YYYY-[W]ww") %>]]
 - [[<% tp.date.now("YYYY-MM-DD", 2, tp.file.title, "YYYY-[W]ww") %>]]
@@ -54,3 +54,13 @@ ___
 - [[<% tp.date.now("YYYY-MM-DD", 4, tp.file.title, "YYYY-[W]ww") %>]]
 - [[<% tp.date.now("YYYY-MM-DD", 5, tp.file.title, "YYYY-[W]ww") %>]]
 - [[<% tp.date.now("YYYY-MM-DD", 6, tp.file.title, "YYYY-[W]ww") %>]]
+
+---
+## Notes Created This Week
+```dataview
+list 
+where file.cday >= date("<% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-[W]ww") %>") 
+and file.cday < date("<% tp.date.now("YYYY-MM-DD", 7, tp.file.title, "YYYY-[W]ww") %>") 
+and file.name != "<% tp.file.title %>"
+sort file.cday desc, file.ctime desc
+```

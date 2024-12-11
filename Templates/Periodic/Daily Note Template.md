@@ -43,3 +43,11 @@ periodic: daily
 #### Level Up ✨
 **What can I improve tomorrow?**  
 - 
+
+---
+## Notes Created Today
+```dataview
+list 
+where file.cday = date("<% tp.file.title %>") and file.name != "<% tp.file.title %>"
+sort file.ctime desc
+```
