@@ -14,6 +14,15 @@ modified: <% tp.file.last_modified_date() %>
 - **Interests:** 
 - **Pets:** 
 
+```dataview
+table rows.Details as "Details"
+where contains(log, "<% tp.file.title %>")
+flatten log as Details
+where contains(Details, "<% tp.file.title %>")
+group by file.link as Note
+sort rows.file.day desc
+```
+
 ---
 ## Meetings
 ```dataview
