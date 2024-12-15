@@ -1,6 +1,4 @@
 ---
-created: <% tp.file.creation_date() %>
-modified: <% tp.file.last_modified_date() %>
 periodic: yearly
 ---
 # <% tp.file.title %>
@@ -11,7 +9,7 @@ periodic: yearly
 ___
 ## Battle Prep ⚔️
 #### Monumental Quests 🏹
-**What is are my monumental goals this year?**
+**What are my monumental goals this year?**
 - [ ] <% tp.file.cursor() %>
 #### Allies 🛡️
  **Who or what can help me this year?**  
