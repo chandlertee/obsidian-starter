@@ -1,43 +1,46 @@
 ---
-created: <% tp.file.creation_date() %>
-modified: <% tp.file.last_modified_date() %>
 periodic: monthly
 ---
 # <% tp.file.title %>
 
-**Prev:** **[[<% tp.date.now("YYYY-MM", -1, tp.file.title, "YYYY-MM") %>]]**
-**Next:** **[[<% tp.date.now("YYYY-MM", +31, tp.file.title, "YYYY-MM") %>]]**
+**Prev Month:** **[[<% tp.date.now("YYYY-MM", -1, tp.file.title, "YYYY-MM") %>]]**
+**Next Month:** **[[<% tp.date.now("YYYY-MM", +31, tp.file.title, "YYYY-MM") %>]]**
+**Weeks:** **[[<% tp.date.now("YYYY-[W]ww", 0, tp.file.title, "YYYY-MM") %>]]**, **[[<% tp.date.now("YYYY-[W]ww", 7, tp.file.title, "YYYY-MM") %>]]**, **[[<% tp.date.now("YYYY-[W]ww", 14, tp.file.title, "YYYY-MM") %>]]**, **[[<% tp.date.now("YYYY-[W]ww", 23, tp.file.title, "YYYY-MM") %>]]**
 **Quarter:** **[[<% tp.date.now("YYYY-[Q]Q", 0, tp.file.title, "YYYY-MM") %>]]**
-
 ___
-## Battle Prep ⚔️
-#### Epic Quests 🏹
-**What can I do this month to advance this quarter's Grand Quests?**
+## Adventure Prep ⚔️
+#### This Quarter's Campaigns
+```dataview
+task
+from "Journal/Quarterly/<% tp.date.now("YYYY-[Q]Q", 0, tp.file.title, "YYYY-MM") %>"
+```
+#### Adventures 🏹
+**What can I do this month to advance this quarter's Campaigns?**
 - [ ] <% tp.file.cursor() %>
 #### Allies 🛡️
  **Who or what can help me this month?**  
 - 
-#### Enemies 👹
+#### Traps 👹
 **What obstacles or distractions should I watch out for?**  
 - 
 
----
-## Save Point ⏳ 
-#### XP 🎮
-**What did I learn or improve upon this month?**  
+___
+## Long Rest 🌙
+#### Wisdom 📚
+**What did I learn this month?**  
 - 
-#### Power-Ups ⚡
+#### Boons ⚡
 **What gave me energy or helped me?**  
 - 
-#### Achievements 🏆
+#### Loot 🏆
 **What were my wins this month?**  
 - 
-#### Boss Fights 🐉
+#### Monsters 🐉
 **What were the toughest challenges I faced? How did I handle them?**  
 - 
-#### Level Up ✨
-**What do I want to focus on leveling up next month?**
+#### Growth 🌱
+**What can I improve next month?**  
 - 
-#### Gratitude 💖
+#### Blessings 🌟
 **What am I grateful for this month?**  
 - 

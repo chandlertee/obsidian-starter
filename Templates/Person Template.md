@@ -2,9 +2,11 @@
 name: <% tp.file.title %>
 role: 
 team: 
+company:
 location: 
-tags: [person]
-meetings: []
+entity:
+  - person
+meetings: 
 created: <% tp.file.creation_date() %>
 modified: <% tp.file.last_modified_date() %>
 ---
@@ -15,7 +17,8 @@ modified: <% tp.file.last_modified_date() %>
 - **Pets:** 
 
 ```dataview
-table rows.Details as "Details"
+table rows.Details as "Mentions"
+from !"Templates"
 where contains(log, "<% tp.file.title %>")
 flatten log as Details
 where contains(Details, "<% tp.file.title %>")

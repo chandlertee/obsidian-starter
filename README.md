@@ -30,6 +30,10 @@ Cheatsheets and personal templates for Obsidian
 		5. Turn off the Templates core plugin
 			1. Go to Obsidian Settings -> Core Plugins
 			2. Toggle Templates to Off
+	4. Dataview
+		1. Toggle on `Automatic task completion tracking`
+		2. Toggle on `Use emoji shorthand for completion`
+		3. Toggle on `Recursive sub-task completion`
 #### Using Templater for File Titles
 1. Disable `Show inline title` in Obsidian Settings
 	- Go to Obsidian Settings -> Appearance
