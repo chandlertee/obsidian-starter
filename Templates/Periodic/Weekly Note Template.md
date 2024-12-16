@@ -26,19 +26,19 @@ from "Journal/Monthly/<% tp.date.now("YYYY-MM", 0, tp.file.title, "YYYY-[W]ww") 
 ___
 ## Long Rest 🌙
 #### Wisdom 📚
-**What did I learn today?**  
+**What did I learn this week?**  
 - 
 #### Boons ⚡
 **What gave me energy or helped me?**  
 - 
 #### Loot 🏆
-**What were my wins today?**  
+**What were my wins this week?**  
 - 
 #### Monsters 🐉
 **What were the toughest challenges I faced? How did I handle them?**  
 - 
 #### Growth 🌱
-**What can I improve tomorrow?**  
+**What can I improve next week?**  
 - 
 #### Blessings 🌟
 **What am I grateful for this week?**  

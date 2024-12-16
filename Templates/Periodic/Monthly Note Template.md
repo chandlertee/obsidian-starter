@@ -27,20 +27,20 @@ from "Journal/Quarterly/<% tp.date.now("YYYY-[Q]Q", 0, tp.file.title, "YYYY-MM")
 ___
 ## Long Rest 🌙
 #### Wisdom 📚
-**What did I learn today?**  
+**What did I learn this month?**  
 - 
 #### Boons ⚡
 **What gave me energy or helped me?**  
 - 
 #### Loot 🏆
-**What were my wins today?**  
+**What were my wins this month?**  
 - 
 #### Monsters 🐉
 **What were the toughest challenges I faced? How did I handle them?**  
 - 
 #### Growth 🌱
-**What can I improve tomorrow?**  
+**What can I improve next month?**  
 - 
 #### Blessings 🌟
-**What am I grateful for this week?**  
+**What am I grateful for this month?**  
 - 

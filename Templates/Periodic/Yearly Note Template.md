@@ -21,20 +21,20 @@ ___
 ___
 ## Long Rest 🌙
 #### Wisdom 📚
-**What did I learn today?**  
+**What did I learn this year?**  
 - 
 #### Boons ⚡
 **What gave me energy or helped me?**  
 - 
 #### Loot 🏆
-**What were my wins today?**  
+**What were my wins this year?**  
 - 
 #### Monsters 🐉
 **What were the toughest challenges I faced? How did I handle them?**  
 - 
 #### Growth 🌱
-**What can I improve tomorrow?**  
+**What can I improve next year?**  
 - 
 #### Blessings 🌟
-**What am I grateful for this week?**  
+**What am I grateful for this year?**  
 - 
