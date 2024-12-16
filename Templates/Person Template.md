@@ -25,6 +25,12 @@ where contains(Details, "<% tp.file.title %>")
 group by file.link as Note
 sort rows.file.day desc
 ```
+___
+### Tasks
+```dataview
+task
+where contains(text, "<% tp.file.title %>")
+```
 
 ---
 ## Meetings
