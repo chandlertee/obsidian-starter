@@ -3,43 +3,44 @@ periodic: weekly
 ---
 # <% tp.file.title %>
 
-**Prev:** **[[<% tp.date.now("YYYY-[W]ww", -7, tp.file.title, "YYYY-[W]ww") %>]]**
-**Next:** **[[<% tp.date.now("YYYY-[W]ww", +7, tp.file.title, "YYYY-[W]ww") %>]]**
+**Prev Week:** **[[<% tp.date.now("YYYY-[W]ww", -7, tp.file.title, "YYYY-[W]ww") %>]]**
+**Next Week:** **[[<% tp.date.now("YYYY-[W]ww", +7, tp.file.title, "YYYY-[W]ww") %>]]**
 **Month:** **[[<% tp.date.now("YYYY-MM", 0, tp.file.title, "YYYY-[W]ww") %>]]**
-
 ___
-## Battle Prep ⚔️
-#### Main Quests 🏹
-**What can I do this week to advance this month's Epic Quests?**
+## Quest Prep ⚔️
+#### This Month's Adventures
+```dataview
+task 
+from "Journal/Monthly/<% tp.date.now("YYYY-MM", 0, tp.file.title, "YYYY-[W]ww") %>"
+```
+#### Quests 🏹
+**What can I do this week to advance this month's Adventures?**
 - [ ] <% tp.file.cursor() %>
-#### Side Quests 🗡️
-**What can I do to support my Main Quests?**
-- [ ] 
 #### Allies 🛡️
  **Who or what can help me this week?**  
 - 
-#### Enemies 👹
+#### Traps 👹
 **What obstacles or distractions should I watch out for?**  
 - 
 
----
-## Save Point ⏳ 
-#### XP 🎮
-**What did I learn or improve upon this week?**  
+___
+## Long Rest 🌙
+#### Wisdom 📚
+**What did I learn today?**  
 - 
-#### Power-Ups ⚡
+#### Boons ⚡
 **What gave me energy or helped me?**  
 - 
-#### Achievements 🏆
-**What were my wins this week?**  
+#### Loot 🏆
+**What were my wins today?**  
 - 
-#### Boss Fights 🐉
+#### Monsters 🐉
 **What were the toughest challenges I faced? How did I handle them?**  
 - 
-#### Level Up ✨
-**What do I want to focus on leveling up next week?**
+#### Growth 🌱
+**What can I improve tomorrow?**  
 - 
-#### Gratitude 💖
+#### Blessings 🌟
 **What am I grateful for this week?**  
 - 
 
@@ -53,7 +54,7 @@ ___
 - [[<% tp.date.now("YYYY-MM-DD", 5, tp.file.title, "YYYY-[W]ww") %>]]
 - [[<% tp.date.now("YYYY-MM-DD", 6, tp.file.title, "YYYY-[W]ww") %>]]
 
----
+___
 ## Notes Created This Week
 ```dataview
 list 

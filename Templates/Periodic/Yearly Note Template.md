@@ -3,38 +3,38 @@ periodic: yearly
 ---
 # <% tp.file.title %>
 
-**Prev:** **[[<% tp.date.now("YYYY", -1, tp.file.title, "YYYY") %>]]**
-**Next:** **[[<% tp.date.now("YYYY", +366, tp.file.title, "YYYY") %>]]**
-
+**Prev Year:** **[[<% tp.date.now("YYYY", -1, tp.file.title, "YYYY") %>]]**
+**Next Year:** **[[<% tp.date.now("YYYY", +366, tp.file.title, "YYYY") %>]]**
+**Quarters:** **[[<% tp.date.now("YYYY-[Q]Q", 0, tp.file.title, "YYYY") %>]]** , **[[<% tp.date.now("YYYY-[Q]Q", 95, tp.file.title, "YYYY") %>]]** , **[[<% tp.date.now("YYYY-[Q]Q", 190, tp.file.title, "YYYY") %>]]** , **[[<% tp.date.now("YYYY-[Q]Q", 285, tp.file.title, "YYYY") %>]]** 
 ___
-## Battle Prep ⚔️
-#### Monumental Quests 🏹
+## Saga Prep ⚔️
+#### Sagas 🏹
 **What are my monumental goals this year?**
 - [ ] <% tp.file.cursor() %>
 #### Allies 🛡️
  **Who or what can help me this year?**  
 - 
-#### Enemies 👹
+#### Traps 👹
 **What obstacles or distractions should I watch out for?**  
 - 
 
----
-## Save Point ⏳ 
-#### XP 🎮
-**What did I learn or improve upon this year?**  
+___
+## Long Rest 🌙
+#### Wisdom 📚
+**What did I learn today?**  
 - 
-#### Power-Ups ⚡
+#### Boons ⚡
 **What gave me energy or helped me?**  
 - 
-#### Achievements 🏆
-**What were my wins this year?**  
+#### Loot 🏆
+**What were my wins today?**  
 - 
-#### Boss Fights 🐉
+#### Monsters 🐉
 **What were the toughest challenges I faced? How did I handle them?**  
 - 
-#### Level Up ✨
-**What do I want to focus on leveling up next year?**
+#### Growth 🌱
+**What can I improve tomorrow?**  
 - 
-#### Gratitude 💖
-**What am I grateful for this year?**  
+#### Blessings 🌟
+**What am I grateful for this week?**  
 - 

@@ -3,39 +3,44 @@ periodic: quarterly
 ---
 # <% tp.file.title %>
 
-**Prev:** **[[<% tp.date.now("YYYY-[Q]Q", -1, tp.file.title, "YYYY-[Q]Q") %>]]**
-**Next:** **[[<% tp.date.now("YYYY-[Q]Q", +100, tp.file.title, "YYYY-[Q]Q") %>]]**
+**Prev Quarter:** **[[<% tp.date.now("YYYY-[Q]Q", -1, tp.file.title, "YYYY-[Q]Q") %>]]**
+**Next Quarter:** **[[<% tp.date.now("YYYY-[Q]Q", +100, tp.file.title, "YYYY-[Q]Q") %>]]**
+**Months:** **[[<% tp.date.now("YYYY-MM", 0, tp.file.title, "YYYY-[Q]Q") %>]]**, **[[<% tp.date.now("YYYY-MM", 32, tp.file.title, "YYYY-[Q]Q") %>]]**, **[[<% tp.date.now("YYYY-MM", 64, tp.file.title, "YYYY-[Q]Q") %>]]**
 **Year:** **[[<% tp.date.now("YYYY", 0, tp.file.title, "YYYY") %>]]**
-
 ___
-## Battle Prep ⚔️
-#### Grand Quests 🏹
-**What can I do this month to advance this year's Monumental Quests?**
+## Campaign Prep ⚔️
+#### This Year's Sagas
+```dataview
+task
+from "Journal/Yearly/<% tp.date.now("YYYY", 0, tp.file.title, "YYYY") %>"
+```
+#### Campaigns 🏹
+**What can I do this quarter to advance this year's Sagas?**
 - [ ] <% tp.file.cursor() %>
 #### Allies 🛡️
- **Who or what can help me this month?**  
+ **Who or what can help me this quarter?**  
 - 
-#### Enemies 👹
+#### Traps 👹
 **What obstacles or distractions should I watch out for?**  
 - 
 
----
-## Save Point ⏳ 
-#### XP 🎮
-**What did I learn or improve upon this quarter?**  
+___
+## Long Rest 🌙
+#### Wisdom 📚
+**What did I learn today?**  
 - 
-#### Power-Ups ⚡
+#### Boons ⚡
 **What gave me energy or helped me?**  
 - 
-#### Achievements 🏆
-**What were my wins this quarter?**  
+#### Loot 🏆
+**What were my wins today?**  
 - 
-#### Boss Fights 🐉
+#### Monsters 🐉
 **What were the toughest challenges I faced? How did I handle them?**  
 - 
-#### Level Up ✨
-**What do I want to focus on leveling up next quarter?**
+#### Growth 🌱
+**What can I improve tomorrow?**  
 - 
-#### Gratitude 💖
-**What am I grateful for this quarter?**  
+#### Blessings 🌟
+**What am I grateful for this week?**  
 - 
