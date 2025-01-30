@@ -25,8 +25,9 @@ Cheatsheets and personal templates for Obsidian
 			1. This will allow Templater to convert template tags when a new note is created, e.g., when a new Daily Note is created
 		4. Update Templater Folder Templates
 			1. In the plugin settings, find Folder Templates
-			2. Add the People Directory to trigger the People Template
+			2. Add the `People` Directory to trigger the `People Template`
 			3. This allows you to use Ctrl+O (Cmd+O), type in `People/Chandler` to create a new note in the People directory, and automatically trigger the People template
+			4.  Add the `Meetings` Directory to trigger the `Meeting Template`
 		5. Turn off the Templates core plugin
 			1. Go to Obsidian Settings -> Core Plugins
 			2. Toggle Templates to Off
