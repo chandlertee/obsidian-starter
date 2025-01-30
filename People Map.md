@@ -2,7 +2,7 @@
 
 ```dataview
 table without id 
-file.link as "Name", company as "Company", location as "Location"
+file.link as "Name", company as "Company", role as "Role", location as "Location"
 from "People"
-where contains(entity, "person")
+sort file.link asc
 ```
