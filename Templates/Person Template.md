@@ -3,11 +3,9 @@ company:
 team: 
 role: 
 location: 
-entity:
-  - person
+email:
 aliases:
 ---
-
 # [[<% tp.file.title %>]]
 
 ## Details
@@ -34,7 +32,6 @@ ___
 task
 where contains(text, "<% tp.file.title %>")
 ```
-
 ---
 
 ## Meetings
