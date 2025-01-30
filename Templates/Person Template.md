@@ -1,20 +1,22 @@
 ---
-name: <% tp.file.title %>
-role: 
+company: 
 team: 
-company:
+role: 
 location: 
 entity:
   - person
-meetings: 
-created: <% tp.file.creation_date() %>
-modified: <% tp.file.last_modified_date() %>
+aliases:
 ---
-# <% tp.file.title %>
+
+# [[<% tp.file.title %>]]
+
 ## Details
 - **Preferred Pronouns:** 
 - **Interests:** 
 - **Pets:** 
+
+## Notes
+- 
 
 ```dataview
 table rows.Details as "Mentions"
@@ -26,6 +28,7 @@ group by file.link as Note
 sort rows.file.day desc
 ```
 ___
+
 ### Tasks
 ```dataview
 task
@@ -33,6 +36,7 @@ where contains(text, "<% tp.file.title %>")
 ```
 
 ---
+
 ## Meetings
 ```dataview
 list
