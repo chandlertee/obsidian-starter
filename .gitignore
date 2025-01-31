@@ -1,3 +1,6 @@
-/.obsidian
 # MacOs
 .DS_Store
+# Obsidian
+.obsidian/plugins/*/*
+!.obsidian/plugins/*/data.json
+.obsidian/workspace.json
