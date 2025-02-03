@@ -1,10 +1,8 @@
----
-attendees:
----
 # [[<% tp.file.title %>]]
 
-[[Meetings Map]]
-  
+## Participants
+- 
+
 ## Agenda
 - 
 

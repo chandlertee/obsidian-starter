@@ -36,10 +36,9 @@ where contains(text, "<% tp.file.title %>")
 
 ## Meetings
 ```dataview
-list
-from "Meetings"
-where contains(participants, "<% tp.file.title %>")
-sort file.cdate desc, file.ctime desc
+TABLE without id
+file.link as "Meeting", file.cday as "Date"
+FROM "Meetings" 
+where contains(file.outlinks, [[]])
+SORT file.cday DESC
 ```
-
- 
