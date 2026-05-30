@@ -22,14 +22,14 @@
   },
   "quarterly": {
     "format": "",
-    "template": "Templates/Periodic/Quarterly Note Template.md",
+    "template": "",
     "folder": "",
-    "enabled": true
+    "enabled": false
   },
   "yearly": {
     "format": "",
-    "template": "Templates/Periodic/Yearly Note Template.md",
+    "template": "",
     "folder": "",
-    "enabled": true
+    "enabled": false
   }
 }
