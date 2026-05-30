@@ -16,23 +16,20 @@ aliases:
 ## Notes
 - 
 
+## Mentions
 ```dataview
-table rows.Details as "Mentions"
-from !"Templates"
-where contains(log, "<% tp.file.title %>")
-flatten log as Details
-where contains(Details, "<% tp.file.title %>")
-group by file.link as Note
-sort rows.file.day desc
+TABLE without id
+file.link as "Note", file.cday as "Date"
+FROM !"Templates" AND !"Meetings"
+where contains(file.outlinks, [[]])
+SORT file.cday DESC
 ```
-___
 
-### Tasks
+## Tasks
 ```dataview
 task
 where contains(text, "<% tp.file.title %>")
 ```
----
 
 ## Meetings
 ```dataview
