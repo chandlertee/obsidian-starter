@@ -13,9 +13,6 @@ aliases:
 - **Interests:** 
 - **Pets:** 
 
-## Notes
-- 
-
 ## Mentions
 ```dataview
 TABLE without id
